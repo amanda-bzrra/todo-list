@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(247, 241, 241);
+}
+
+h1,
+input,
+li,
+a {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	margin: 100px auto;
+	background: orange;
+	max-width: 500px;
+	height: auto;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.container h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.container input {
+	font-size: 1rem;
+	color: orange;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+	width: 60%;
+}
+
+.container input::placeholder {
+	opacity: 0.5;
+	font-size: 1rem;
+}
+
+.container button {
+	border: none;
+	border-radius: 5px;
+	padding: 16px 40px;
+	background: rgb(118, 133, 201);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.container button:hover {
+	/*opacity: 0.9;*/
+	background: rgb(86, 108, 206);
+}
+
+.container ul {
+	margin: 20px auto;
+	max-width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+}
+
+.container ul li {
+	color: orange;
+	padding: 10px;
+	list-style: decimal;
+	margin-right: 10px;
+	border-bottom: 1px solid rgba(118, 133, 201, 0.7);
+}
+
+.container ul li:last-child {
+	border-bottom: none;
+}
+
+.container ul li a {
+	position: absolute;
+	right: 20px;
+	color: rgb(118, 133, 201);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+.container ul li a:hover {
+	color: red;
+}
