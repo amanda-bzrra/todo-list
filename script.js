@@ -49,6 +49,12 @@ function AddTarefas() {
 	}
 }
 
+document.addEventListener('keypress', function (e) {
+	if (e.key === 'Enter') {
+		AddTarefas()
+	}
+})
+
 buttonElement.onclick = AddTarefas;
 
 function deletarTarefa(posicao) {
